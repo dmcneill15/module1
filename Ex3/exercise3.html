@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Exercise 3</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+            align-items: stretch;
+        }
+        .column {
+            background: goldenrod;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .changeButton {
+            font-size: 20px;
+            background-color:rgb(243, 151, 12);
+            padding: 10px; 
+            border: 2px solid #000000;
+            cursor: pointer;
+        }
+        .changeButton:hover{
+            background-color:blanchedalmond;
+        }
+    </style>
+
+    <script>
+        function bt1_changeHeadingBgColor()
+        {
+            let x = document.getElementById("heading1");
+            let y = document.getElementById("input1").value;
+            x.innerText=y;
+            x.style.backgroundColor="blanchedalmond";
+        }
+
+        function bt2_changeHeadingBgColor()
+        {
+            let x = document.getElementById("heading2");
+            let y = document.getElementById("input2").value;
+            x.innerText=y;
+            x.style.backgroundColor="rgb(128, 72, 4)";
+            x.style.color="white";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column" id="column1">
+            <h1 id="heading1">Hello</h1>
+            Change text to: <input type="text" id="input1"/><br/>
+            <button class="changeButton" id="button1" onclick="bt1_changeHeadingBgColor()">Change Me</button>
+        </div>
+        <div class="column" id="column2">
+            <h1 id="heading2">World</h1>
+            Change text to: <input type="text" id="input2"/><br/>
+            <button class="changeButton" id="button2" onclick="bt2_changeHeadingBgColor()">Change Me</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
