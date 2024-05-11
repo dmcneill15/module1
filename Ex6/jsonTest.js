@@ -1,3 +1,5 @@
+//Exercise 6
+
 const book = {
     "title" : "Harry Potter",
     "description" : "This is the blurb of the book",

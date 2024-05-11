@@ -1,3 +1,5 @@
+//Exercise 7
+
 //this function returns the sum of two numbers
 function sum(a, b) {
   return a + b;
@@ -37,6 +39,18 @@ if (subtract(10, 20) != 10) {
 if (subtract(20, 10) < 0) {
   console.log("Warning: function subtract() evaluates to negative:20>10");
 } else console.log("Subtract function passes");
+
+//alternative from class
+let result = sum(10, 20);
+console.log("Should return 10+20 = 30 : " + (result == 30 ? 'pass' : 'fail' ));
+
+result = divide(20,10);
+console.log("Expecting 20/10=2 : " + (result == 2 ? 'pass' : 'fail'));
+//if result == 2, show pass, else show fail
+
+// example to force a fail
+result = multiply(2,3);
+console.log("Expecting2*3=6 : " + (result == 7? 'pass' : 'fail'));
 
 /*
 console.log(sum(4, 5));

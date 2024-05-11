@@ -1,3 +1,5 @@
+//Exercise 5
+
 let arrayx = ['a', 'b', 'c', 'd', 'e'];
 console.log(arrayx);
 
