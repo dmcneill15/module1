@@ -12,4 +12,4 @@ let num1 = arrayx.pop();
 console.log(arrayx);
 console.log("Popped: " + num1);
 
-//just testing git commnds
+//just testing git commnds 

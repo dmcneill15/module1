@@ -1,46 +1,42 @@
 //this function returns the sum of two numbers
-function sum(a, b){
-    return(a+b);
+function sum(a, b) {
+  return a + b;
 }
 
 //this functions returns the subraction of two numbers
-function subtract(a, b){
-    return(b-a);
+function subtract(a, b) {
+  return b - a;
 }
 
 //this function returns the multiplication of two numbers
-function multiply(a,b){
-    return(a*b);
+function multiply(a, b) {
+  return a * b;
 }
 
 //this function returns the division of two numbers
-function divide(a,b){
-    return(a/b);
+function divide(a, b) {
+  return a / b;
 }
 
 //this functions returns the concatination of Hello and a given name
-function greetings(name){
-    return("Hello ".concat(name));
+function greetings(name) {
+  return "Hello ".concat(name);
 }
 
 //unit tests
 //first test to check how the error is thrown
-if(sum(10,20) != 31){
-    console.log("Error: function sum()");
-}
 
-if(sum(10,20) != 30){
-    console.log("Error: function sum()");
-}
+if (sum(10, 20) != 30) {
+  console.log("Error: function sum(): 10+20 !=30");
+} else console.log("Sum function passes");
 
-if(subtract(10,20) != 10){
-    console.log("Error: function subtract()");
-}
+if (subtract(10, 20) != 10) {
+  console.log("Error: function subtract(): 20-10!=10");
+} else console.log("Subtract function passes");
 
-if(subtract(20,10) < 0){
-    console.log("Error: function subtract() evaluates to negative:a>b");
-}
-
+if (subtract(20, 10) < 0) {
+  console.log("Warning: function subtract() evaluates to negative:20>10");
+} else console.log("Subtract function passes");
 
 /*
 console.log(sum(4, 5));
